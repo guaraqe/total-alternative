@@ -3,17 +3,20 @@ module Data.List.Alternative
        , tail
        , init
        , last
+       , scanl1
+       , scanr1
+       , cycle
        ) where
 
 import Prelude hiding ( head
                       , tail
                       , init
-                      , last )
+                      , last
+                      , scanl1
+                      , scanr1
+                      , cycle )
 
-import qualified Data.List as L ( head
-                                , tail
-                                , init
-                                , last )
+import qualified Data.List as L
 
 import Control.Applicative
 
@@ -32,3 +35,12 @@ init = wrap L.init
 
 last :: Alternative f => [a] -> f a
 last = wrap L.last
+
+scanl1 :: Alternative f => (a -> a -> a) -> [a] -> f [a]
+scanl1 = wrap . L.scanl1
+
+scanr1 :: Alternative f => (a -> a -> a) -> [a] -> f [a]
+scanr1 = wrap . L.scanr1
+
+cycle :: Alternative f => [a] -> f [a]
+cycle = wrap L.cycle
