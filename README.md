@@ -1,8 +1,8 @@
-# safe-alternative
+# total-alternative
 
-This library exports safe versions for Prelude partial functions using
-an `Alternative` interface where `empty` represents the results for
-invalid inputs.
+This library exports total versions for Prelude partial functions
+using an `Alternative` interface where `empty` represents the result
+for invalid inputs.
 
 The `Alternative` interface allows them to be specialized to:
 - `Maybe`

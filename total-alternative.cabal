@@ -1,9 +1,9 @@
-name:                safe-alternative
-version:             0.1.0.0
-synopsis:            Safe Alternative interface for unsafe
-                     prelude functions
+name:                total-alternative
+version:             0.1.0.1
+synopsis:            Alternative interface for total versions of
+                     partial function on the Prelude.
 description:         Please see README.md
-homepage:            http://github.com/guaraqe/safe-alternative#readme
+homepage:            http://github.com/guaraqe/total-alternative#readme
 license:             BSD3
 license-file:        LICENSE
 author:              guaraqe
@@ -21,4 +21,4 @@ library
 
 source-repository head
   type:     git
-  location: https://github.com/guaraqe/list-alternative
+  location: https://github.com/guaraqe/total-alternative
